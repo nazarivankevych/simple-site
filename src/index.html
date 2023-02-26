@@ -1,37 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simple site</title>
-    <link rel="icon" type="image/x-icon" href="img/images.png">
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Welcome back COWBOY!</h1>
-        <h2>Let`s rock!</h2>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Help</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
-    <article></article>
-    <main></main>
-    <aside></aside>
-    <footer></footer>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <!-- Simple header -->
+            <header id="header" class="container mx-auto">
+                <h1 id="header_title" class="container">Карпати</h1>
+                <blockquote id="header_quote" class="container">Дивовижний край</blockquote>
+                <p id="header_text" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatem, vitae!</p>
+            </header>
+            <nav id="navigation">
+                <ul class="nav justify-content-center $indigo-300">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Домашня сторінка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carousel_images">Слайд шоу</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/watch?v=qxEjlZ3o0Hw&t=160s&ab_channel=exploration.if.ua">Відео для ознайомлення</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Про нас</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Simple content -->
+            <div id="content">
+                <aside class="content_aside">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse fugiat hic adipisci,
+                        obcaecati at fugit facilis qui? Ab, maxime.</p>
+                </aside>
+                <main class="content_main">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quod adipisci accusamus nulla
+                        cumque voluptas laboriosam molestias blanditiis ea eius sequi quisquam numquam facilis minus non
+                        rem quae inventore, hic temporibus eligendi reprehenderit tempora odit necessitatibus. Quod
+                        quaerat possimus quasi nesciunt magni nemo corporis, unde dolore numquam natus aliquam dolores
+                        iure cupiditate et laudantium neque praesentium molestiae mollitia fuga? Illo fugit assumenda
+                        placeat sit unde ipsum aut at a error, ratione nesciunt excepturi vero fuga voluptas impedit
+                        earum commodi! Dolorem, nostrum dicta! Ut minima iste aperiam eos? Aut temporibus deleniti,
+                        eveniet nisi mollitia, exercitationem facere aspernatur placeat fugit assumenda consequuntur
+                        dolores numquam similique ullam praesentium nesciunt porro ipsam. Unde ad esse non, doloribus
+                        ullam adipisci et, rerum error blanditiis pariatur hic voluptas necessitatibus autem magnam!
+                        Explicabo, amet maiores.</p>
+                </main>
+            </div>
+            <!-- Simple carousel -->
+            <picture id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner" id="carousel_images">
+                    <div class="carousel-item active">
+                        <img src="img/spring.jpeg" class="d-block w-100" alt="spring">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/summer.jpg" class="d-block w-100" alt="summer">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/autumn.jpeg" class="d-block w-100" alt="autumn">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/winter.jpg" class="d-block w-100" alt="winter">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </picture>
+            <!-- Simple footer -->
+            <footer>Copyright &copy;</footer>
+        </div>
+
+    </div>
     <!-- Scripts for simple js -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
     <script src="script.js"></script>
 </body>
+
 </html>
